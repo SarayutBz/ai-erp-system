@@ -34,12 +34,11 @@ const orderSchema = new mongoose.Schema(
 )
 
 // auto คำนวณ totalAmount ก่อน save
-orderSchema.pre('save', function (next) {
+orderSchema.pre('save', function () {
   this.totalAmount = this.items.reduce(
     (sum, item) => sum + item.qty * item.price,
     0
   )
-  next()
 })
 
 module.exports = mongoose.model('Order', orderSchema)
