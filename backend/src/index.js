@@ -12,7 +12,7 @@ app.use(express.json())
 
 // routes 
 app.use('/api/orders', require('./routes/orders'))
-// app.use('/api/upload', require('./routes/upload'))
+app.use('/api/upload', require('./routes/upload'))
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' })
