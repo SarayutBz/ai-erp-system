@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-const BASE = 'http://localhost:3000/api'
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
 
 export const useApiStore = defineStore('api', () => {
   const loading = ref(false)
