@@ -1,4 +1,7 @@
-backend/node_modules/
-backend/.env
-backend/test.http
+# root .gitignore
+node_modules/
+.env
 uploads/
+dist/
+.DS_Store
+backend/test.http
