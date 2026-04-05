@@ -7,7 +7,7 @@
           <v-icon color="primary" size="20">mdi-lightning-bolt</v-icon>
         </div>
         <div>
-          <div class="logo-title">AI ERP</div>
+          <div class="logo-title">AI ERP(DEMO)</div>
           <div class="logo-sub">Automation</div>
         </div>
       </div>
