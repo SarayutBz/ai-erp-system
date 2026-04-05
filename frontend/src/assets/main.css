@@ -1,0 +1,9 @@
+@import './base.css';
+
+/* Reset any conflicting layout from Vue scaffold */
+#app {
+  max-width: unset;
+  margin: unset;
+  padding: unset;
+  font-weight: normal;
+}
