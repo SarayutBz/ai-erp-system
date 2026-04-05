@@ -13,6 +13,7 @@ app.use(express.json())
 // routes 
 app.use('/api/orders', require('./routes/orders'))
 app.use('/api/upload', require('./routes/upload'))
+app.use('/api/logs', require('./routes/logs'))
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' })
